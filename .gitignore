@@ -1,0 +1,40 @@
+# Unreal Engine 5 — generated artifacts
+Binaries/
+Build/
+Intermediate/
+Saved/
+DerivedDataCache/
+
+# Per-project IDE files
+*.xcodeproj/
+*.xcworkspace/
+.vs/
+.idea/
+.vscode/
+
+# Project-local crash logs and shader compile cache
+*.dump
+*.log
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+
+# Plugin build outputs (track plugin source, not their compiled output)
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# Android build outputs
+*.apk
+*.aab
+*.keystore
+
+# Local environment
+.env
+.env.local
+
+# Pre-Phase-1 — placeholder for later UE5 project root
+# Engine/
