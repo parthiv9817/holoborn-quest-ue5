@@ -8,9 +8,22 @@ This is the **client** — the UE5 app that runs on the headset. The backend liv
 
 ## Status
 
-🚧 **Pre-Phase-1 — toolchain bring-up.** No game code yet.
+🪦 **ARCHIVED / ABANDONED (2026-05-04). This path is dead — do not revive it.**
 
-This repo is a fresh start. The original Unity client was lost when the dev Mac died on ~April 25, 2026 (compiled APK survived on the headset, source did not). Founder push + lost code + Vision Pro on the longer roadmap → migrating to UE5 instead of rebuilding in Unity.
+The UE5 migration was abandoned after it hit an **unfixable engine regression**: on Intel-Mac +
+UE 5.5.4, the standalone Quest APK fails at engine init with `Missing global shader
+FScreenPSsRGBSourceMipLevelArray's permutation 0` — a binary cooker regression for
+`VULKAN_ES31_ANDROID` that **no `.ini` setting reaches** (verified across 10+ config-matrix builds).
+There are zero documented Intel-Mac + UE5 + standalone-Quest successes globally, and Meta itself
+routes Mac Quest devs to Unity. The project pivoted to Unity on 2026-05-05; the shipped client lives
+at **[parthiv9817/holoborn-quest-unity](https://github.com/parthiv9817/holoborn-quest-unity)**.
+
+Kept for historical reference only (toolchain notes, plugin recon, version pins below). Immersive VR
+*did* run on-device (Build #5) before the cooker wall — the blocker was purely the shader cook.
+
+The original Unity client was lost when the dev Mac died on ~April 25, 2026 (compiled APK survived on
+the headset, source did not). Founder push + lost code + Vision Pro on the longer roadmap → UE5 was
+attempted instead of an immediate Unity rebuild. It didn't work out (see above).
 
 The migration roadmap and decision history live in the backend repo's diaries:
 
